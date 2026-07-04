@@ -28,7 +28,6 @@ Bumping the hidden size to 256 gives you immediate, visible gains on the trainin
 
 ### What happens if we replace `np.tanh(z)` with a linear activation (no squashing) or ReLU?
 
-**Question:** We used `tanh` as the activation. What would happen if we used a linear activation (no squashing) instead? Try changing `np.tanh(z)` to just `z` in `rnn_step` and re-run training — what do you observe?
 
 **Answer:** Removing the `tanh` squashing function breaks both the network's capacity to learn and its training stability. 
 
